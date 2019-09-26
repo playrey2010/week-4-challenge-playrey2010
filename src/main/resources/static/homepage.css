@@ -1,0 +1,22 @@
+body {
+    background: url(https://res.cloudinary.com/playrey/image/upload/v1569435134/piazzale-michelangelo_hprwi2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-container {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-style: solid;
+    /*border-color: #168282;*/
+    border-color: rgba(22,130,130,1);
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
