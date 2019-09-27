@@ -1,0 +1,55 @@
+body {
+    background: url(https://comic.browserling.com/glasses.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgba(15, 8, 18, 1);
+    z-index:1;
+
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    /*font-size: 17px;*/
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+
+#navbar a:hover {
+    background-color: #333;
+    color: #ddd;
+}
+
+#navbar a.active {
+    background-color: rgba(15, 8, 18, 1);
+    color: white;
+}
+
+div.card-columns {
+    width: 50%;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-fluid {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*.container-fluid {*/
+/*    display: inline-block;*/
+/*}*/
+/*div.card img {*/
+/*    width: 200px;*/
+/*}*/

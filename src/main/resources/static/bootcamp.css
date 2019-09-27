@@ -34,56 +34,10 @@ body {
     color: white;
 }
 
-
-.carousel-container {
-    text-align: center;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.jumbotron {
-    margin-top: 1rem;
+.container {
+    background-color: rgba(233, 236, 239, .95);
     border-color: rgba(15, 8, 18, 1);
     border-style: solid;
-    background-color: rgba(233, 236, 239, .8);
-}
-
-div.thebuttoncontainer {
-    /*text-align: center;*/
-    text-align: right;
-}
-
-div.thedate {
-    text-align: left;
-    color: #333333;
-    font-size: 75%;
-}
-
-.container {
-    text-align: center;
     color: rgba(15, 8, 18, 1);
     margin-top: 2rem;
-}
-
-.tab-content {
-    text-align: left;
-}
-
-.nav-tabs>li>a {
-    background-color: rgba(15, 8, 18, 1);
-    color: #FFFFFF;
-}
-
-/*#prodeal {*/
-/*    font-size: 25%;*/
-/*}*/
-
-
-.inside-tab {
-    background-color: rgba(99, 99, 99, .5);
-    background-size: contain;
-    /*height: auto;*/
-    font-size: 125%;
-    padding: 0 1em;
 }

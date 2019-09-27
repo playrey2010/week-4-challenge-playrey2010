@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/bootcamp.css"/>
+    <title>About the bootcamp</title>
+</head>
+<body>
+<div th:replace="base :: navigbar"></div>
+<div class="container"><h1>Java Web Developer Boot Camp</h1>
+    <h3>America's Promise Java Web Developer Boot Camp</h3>
+    <h4><strong>WHAT IS THE PROGRAM?</strong></h4>
+    <p>The Java Web Developer Boot Camp is an 8 hour a day (9 am - 5 pm, M-F) 8-week, immersive software engineering
+        program funded by the Department of Labor. This course aims to increase the number of skilled software
+        developers in
+        this country. We do this by accepting qualified candidates who cannot afford the cost of a coding boot camp. If
+        accepted into the program all fees will be covered by the program.</p>
+
+
+    <h5>What will you Learn?</h5>
+    <p>The Java Web Development Bootcamp takes you from your first java program to developing a web application. This
+        course will give you a fast start on your career so you can take it to the next level. The course will teach you
+        by
+        forcing you to write over 130 java applications, including 5 major web applications. Programming challenges will
+        keep you on your toes.</p>
+
+    <p>You'll learn to create web pages. You'll use frameworks and stored procedures. You'll connect to a database using
+        the Java Persistence API(JPA) and Hibernate, and most importantly, all assignments are submitted through git, so
+        you
+        will learn to develop using best practices in class, to make it easy to contribute value when you are on the
+        job.</p>
+
+    <h5><strong>Is this bootcamp right for me?</strong></h5>
+    <p>The bootcamp is for programmers with a basic understanding of an object oriented language:
+        Java, C#, VB.NET, Python, PHP, Ruby or C++. You do not need experience developing
+        web applications.
+    </p>
+
+    <h5>What is the criteria for admission?</h5>
+
+    <p>Applicants must be passionate about coding and have the drive to succeed in an immersive
+        environment. Our ideal candidate is an Information Systems or Computer Science major
+        who is either at least a rising junior or graduated within the last six years.
+    </p>
+
+    <p>If a student doesn't meet those criteria, they can participate in a special one week
+        mini-camp to assess their ability to learn in this environment.
+    </p>
+
+    <p>Applicants also must be unemployed or underemployed to qualify for the grant. In the
+        state of Maryland, a person who makes $42,000 or less is underemployed.&nbsp;Must be able
+        to work in the United States.
+    </p>
+    Source: <a href="https://www.montgomerycollege.edu/workforce-development-continuing-education/information-technology/americas-promise-program/java-web-developer-boot-camp.html">https://www.montgomerycollege.edu/workforce-development-continuing-education/information-technology/americas-promise-program/java-web-developer-boot-camp.html</a>
+</div>
+<!-- Optional JavaScript -->
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

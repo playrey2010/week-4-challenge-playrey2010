@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,54 +11,392 @@
     <title>HomePage</title>
 </head>
 <body>
-<div class="carousel-container">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100%;">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="jumbotron">
-                    <h1 class="display-4">PDA</h1>
-                    <p>28 July 2018</p>
-                    <hr class="my-4">
-                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
+<div th:replace="base :: navigbar"></div>
+<div class="container">
+    <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all"
+               aria-selected="true">All topics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="gh-tab" data-toggle="tab" href="#gh" role="tab" aria-controls="gh"
+               aria-selected="false">GitHub</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pda-tab" data-toggle="tab" href="#pda" role="tab" aria-controls="pda"
+               aria-selected="false">Program Design & Algorithms</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="core-tab" data-toggle="tab" href="#core" role="tab" aria-controls="core"
+               aria-selected="false">Core Java</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="oojava-tab" data-toggle="tab" href="#oojava" role="tab" aria-controls="oojava"
+               aria-selected="false">Object-oriented Java</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="webdesign-tab" data-toggle="tab" href="#webdesign" role="tab" aria-controls="webdesign"
+               aria-selected="false">HTML/CSS/Bootstrap</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab"><div class="inside-tab">
+            <div class="carousel-container">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="jumbotron">
+                                <h1 class="display-4">PDA</h1>
+                                <p>28 July 2018</p>
+                                <hr class="my-4">
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                                <p class="lead">
+                                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="jumbotron">
+                                <h1 class="display-4">Core Java</h1>
+                                <p>28 July 2018</p>
+                                <hr class="my-4">
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                                <p class="lead">
+                                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="jumbotron">
+                                <h1 class="display-4">GitHub</h1>
+                                <p>28 July 2018</p>
+                                <hr class="my-4">
+                                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                                <p class="lead">
+                                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="jumbotron">
-                    <h1 class="display-4">Core Java</h1>
-                    <p>28 July 2018</p>
-                    <hr class="my-4">
-                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
+        </div></div>
+        <div class="tab-pane fade" id="gh" role="tabpanel" aria-labelledby="gh-tab"><div class="inside-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <div class="thedate"><p>28 July 2018</p></div>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <div class="thebuttoncontainer"><a class="btn pull-right btn-dark btn-lg" href="#" role="button">Read more</a></div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="jumbotron">
-                    <h1 class="display-4">GitHub</h1>
-                    <p>28 July 2018</p>
-                    <hr class="my-4">
-                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        </div></div>
+        <div class="tab-pane fade" id="pda" role="tabpanel" aria-labelledby="pda-tab"><div class="inside-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="tab-pane fade" id="core" role="tabpanel" aria-labelledby="core-tab"><div class="inside-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="tab-pane fade" id="oojava" role="tabpanel" aria-labelledby="oojava-tab"><div class="inside-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="tab-pane fade" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab"><div class="inside-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Core Java</h1>
+                            <p>28 July 2018</p>
+                            <hr class="my-4">
+                            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
     </div>
 </div>
 <!-- Optional JavaScript -->
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
