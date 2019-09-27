@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/github.css"/>
+    <title>Pro Design</title>
+</head>
+<body>
+<div th:replace="base :: navigbar"></div>
+<div class="container"><h1>The software development process</h1>
+    <h6>July 28, 2019</h6>
+
+    <p>In my experience, the process of software development tends to be rather chaotic. Team members come and go, requirements change, schedules change, entire projects get canceled, entire companies go out of business, and so on. The programmer's job is to successfully navigate this chaos and in the end produce a "quality" product in a "timely" manner.</p>
+    <p>Besides being chaotic, the software development process also tends to be rather iterative. As a software product is developed, it continuously evolves based on feedback from many parties. This iterative process works from release to release (each release is one iteration) and within the development cycle of a single release. From release to release, for example, the feedback of customers with the current version indicates which bug-fixes and enhancements are most important to make in the next version. Within the development cycle of a single release, the vision of the end target is continuously adjusted by forces within the company as development progresses.</p>
+    <p>Despite the chaos and iteration, however, I have found that most development teams try to enforce some structure on their development efforts. For the purposes of this column, I'll loosely divide the software development process of a single release cycle into these four phases:</p>
+    <ol>
+        <li>Specification</li>
+        <li>Design</li>
+        <li>Implementation</li>
+        <li>Integration and test
+        </li>
+    </ol>
+    Source: <a href="https://www.javaworld.com/article/2076601/introduction-to--design-techniques-.html">https://www.javaworld.com/article/2076601/introduction-to--design-techniques-.html</a>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
